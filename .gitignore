@@ -88,3 +88,6 @@ target/
 
 # Virtual environment
 .venv/
+
+# VSC Workspace
+*.code-workspace
