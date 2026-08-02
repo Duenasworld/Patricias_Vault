@@ -1,4 +1,4 @@
-from setup import Queries
+from db_queries import Queries
 
 
 def main():
@@ -11,12 +11,10 @@ if __name__ == "__main__":
 
 db = Queries()
 
-db.delete_db(db_name="pwd.db")
 
-sql_code, result = db.check_db_exists(db_name="pwd.db")
-print(sql_code, result)
+rc = db.check_db_exists()
+print(rc)
 
-
-if sql_code == 100:
-    print(f"Der Datenbankname lautet '{db.db_name}'.")
-    db.create_db_and_tables()
+if rc == 100:
+    rc = db.setup_tables()
+    print("RC aus setup: ", rc)
