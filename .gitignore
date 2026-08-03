@@ -89,5 +89,9 @@ target/
 # Virtual environment
 .venv/
 
-# VSC Workspace
-*.code-workspace
+# private und persönliche daten exkludieren
+Archive
+.ruff_cache
+notizen.txt
+
+
