@@ -1,49 +1,131 @@
-# Patricias Passwort Manager 
 
-Mit diesem Programm erstelle ich einen "simplen" Passwort Manager um all meine Passwörter, Token Keys und Credit Card Informationen abzuspeichern und zu verwalten.
+# 🔐 Patricia's Password Manager/Vault
 
-Dies ist ein privates Projekt um meine Python Skills zu erweitern, mich mit verschiedenen Themen wie Security, Access, GUI (Desktop und Mobile) auseinanderzusetzen und um meine Seniorität zu zeigen.
+A personal project to design and build a secure, cross-platform password manager while deepening my knowledge of modern software development, security, and application architecture.
 
-Was ich erreichen möchte:
+The goal is not only to create a functional password manager but also to apply professional software engineering principles throughout the development process.
 
-Hauptziel der App:
-- Passwörter zentral speichern mit Kommentar und Änderungsnachweis
-- Internet Token Keys ablegen
-- Kreditkarten und andere Karten-Informationen hinterlegen
+## 🎯 Project Goals
 
-Die App
-- muss sicher verschlüsseln
-- eventuell Historie anzeigen (bin ich noch am überlegen)
-- soll unterschiedliche Benutzer verwalten können
-- soll Benutzern das Suchen nach Passwörtern ermöglichen und diese dann auch anzeigen lassen können (ähnlich wie die browser passwort manager)
-- soll die Daten sichern/Ausfallsicher machen
-- soll auf dem Desktop als auch auf dem Mobil-Telefon laufen
-- soll die Daten zwischen Desktop und Mobiltelefon synchronisieren
+The application is designed to securely store and manage:
+
+* Passwords
+* API & Internet Tokens
+* Credit and debit card information
+* Secure notes (planned)
+
+Key features include:
+
+* 🔒 Strong encryption for sensitive data
+* 👥 Multi-user support
+* 🔍 Fast search functionality
+* 📝 Password history and audit trail (planned)
+* 💾 Reliable backup and recovery
+* 🔄 Synchronization between desktop and mobile devices
+* 📱 Cross-platform support
+
+---
+
+## 🏗️ Architecture
+
+```text
+┌─────────────────────┐      JSON / REST API      ┌────────────────────────────┐
+│ Frontend            │  <--------------------->  │ Backend                    │
+│                     │                           │                            │
+│ Vite                │                           │ Python                     │
+│ JavaScript          │                           │ Flask / FastAPI            │
+│ Bootstrap           │                           │ SQLite                     │
+└─────────────────────┘                           └────────────────────────────┘
+```
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+* Vite
+* JavaScript
+* Bootstrap
+* HTML
+* CSS
+
+### Backend
+
+* Python
+* Flask (currently)
+* FastAPI (planned evaluation)
+* SQLite
+* REST APIs
+* JSON
+
+### Tools
+
+* Git
+* GitHub
+
+---
+
+## 📚 Learning Objectives
+
+This project is intentionally built as a long-term learning project to strengthen my skills in modern software engineering.
+
+Current focus areas include:
+
+* Python application development
+* Secure software design
+* Authentication & authorization
+* Cryptography fundamentals
+* REST API development
+* Database design
+* Frontend development with Vite
+* JavaScript & Bootstrap
+* Git & GitHub workflows
+* Clean Code
+* Software Architecture
+* Testing
+* CI/CD
+
+---
+
+## 🚀 Why This Project?
+
+As a Senior Software Engineer with extensive experience in enterprise and mainframe environments, I'm using this project to broaden my expertise with modern development technologies and practices.
+
+My objective is to combine proven engineering principles with contemporary backend and frontend development while building a real-world application from scratch.
+
+---
+
+## 💡 Feedback
+
+Suggestions, ideas, and constructive feedback are always welcome.
+
+One small request: I'd appreciate explanations rather than complete solutions whenever possible—the learning experience is an important part of this project.
 
 
-Mein Ziel
-- Kenntnisse in Front- und Backend erweitern
-- Sicherheitsprinzipien kennen und anwenden können
-- Verschiedene Entwicklerprinzipien kennen und anwenden
-- Moderne Programmiersprachenkenntisse erweitern und Leistung ablegen dass ich es kann
+## 🚧 Project Status
+
+This project is currently under active development.
+
+Current milestone:
+- [x] Project setup
+- [ ] Database layer
+- [ ] Encryption
+- [ ] User authentication
+- [ ] Password management
+- [ ] Synchronization
+- [ ] Mobile client
 
 
-[ FRONTEND / CLIENT ]            [ BRÜCKE ]                  [ BACKEND / SERVER ]
-Vite + Bootstrap + JS     <--->  API-Anfragen (JSON)  <--->  Python (Flask/FastAPI) + SQLite3
-(Das, was der Nutzer sieht)      (über das Internet)         (Datenverarbeitung & Speicherung)
+## 🗺️ Roadmap
 
-
-Ebenso Aneignen von Kenntnisssen in 
-- GIT
-- GITHUB
-- Python
-- Flask
-- SQL
-- VITE
-- JS
-- Bootstrap
-- JSON 
-und was halt sonst noch alles dazu kommt.
-
-
-Ideen, Vorschläge, Hint und Tips gerne willkommen --> Bitte Lerneffekt für mich nicht vergessen
+- Secure encrypted storage
+- User authentication
+- Password generator
+- Search functionality
+- Backup & restore
+- Desktop application
+- Mobile application
+- Synchronization
+- Automated testing
+- Docker deployment

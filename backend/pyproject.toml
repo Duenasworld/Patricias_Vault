@@ -1,7 +1,7 @@
 [project]
-name = "pwd-app"
+name = "vault_app"
 version = "0.1.0"
-description = "Patricias Passwort Manager"
+description = "Patricias Passwort Manager/Vault"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
